@@ -1,0 +1,7 @@
+win_flex simplelang.l
+
+win_bison -d simplelang.y
+
+win_flex -o lex.yy.c simplelang.l
+
+win_bison -d -o parser.tab.c simplelang.y
